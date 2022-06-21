@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/defaultbackgroundalbum"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:contentDescription="BackgroundAlbum"
+        android:scaleType="fitXY"
+        android:src="@drawable/defaultalbumbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/backfleche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_fleche_gauche"
+        app:layout_constraintStart_toStartOf="@id/defaultbackgroundalbum"
+        app:layout_constraintTop_toTopOf="@id/defaultbackgroundalbum" />
+
+    <ImageButton
+        android:id="@+id/favAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_like_off"
+        app:layout_constraintEnd_toEndOf="@id/defaultbackgroundalbum"
+        app:layout_constraintTop_toTopOf="@id/defaultbackgroundalbum" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:paddingTop="5sp"
+        android:text="Artiste"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/albumName"
+        app:layout_constraintStart_toStartOf="@id/defaultbackgroundalbum" />
+
+
+    <TextView
+        android:id="@+id/albumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:paddingStart="15sp"
+        android:paddingTop="5sp"
+        android:text="AlbumTitle"
+        android:textColor="#F1EFEF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/defaultbackgroundalbum"
+        app:layout_constraintStart_toStartOf="@id/defaultbackgroundalbum" />
+
+    <TextView
+        android:id="@+id/descriptionAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:paddingStart="10sp"
+        android:paddingEnd="20sp"
+        android:text="Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/defaultbackgroundalbum" />
+
+    <TextView
+        android:id="@+id/Artistes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:text="Albums(12)"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionAlbum" />
+
+    <View
+        android:id="@+id/secondLine"
+        android:layout_width="391dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20sp"
+        android:background="#F1EFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="2sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Artistes" />
+
+    <ListView
+        android:id="@+id/albumListView"
+        android:layout_width="0dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="5sp"
+        android:divider="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="210sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondLine"
+        tools:listitem="@layout/album_item_artistescreen" />
+
+    <TextView
+        android:id="@+id/titleOfAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:paddingStart="10sp"
+        android:paddingEnd="20sp"
+        android:text="Titres les plus appréciés"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/albumListView" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="0sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleOfAlbum"
+        app:layout_constraintWidth="0sp"
+        tools:listitem="@layout/title_album_items_artiste" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

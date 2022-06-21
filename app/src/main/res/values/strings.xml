@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Projet_Kotlin</string>
+    <string name="classements">Classements</string>
+    <string name="titres">Titres</string>
+    <string name="albums">Albums</string>
+    <string name="descriptionImageFavoris">Ceci est une image</string>
+    <string name="rechercherLabel">Rechercher</string>
+    <string name="favorisLabel">favoris</string>
+</resources>

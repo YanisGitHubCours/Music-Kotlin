@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/RankTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="167dp"
+        android:text="@string/classements"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RankTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:text="@string/titres"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/Albums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RankTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="96dp"
+        android:background="@android:color/transparent"
+        android:text="@string/albums"
+        android:textColor="@color/black" />
+</RelativeLayout>

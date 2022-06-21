@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/defaultbackgroundalbum"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/defaultalbumbackground"
+        android:contentDescription="BackgroundAlbum"
+        android:scaleType="fitXY"
+        android:src="@drawable/defaultalbumbackground" />
+
+    <ImageButton
+        android:id="@+id/backfleche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_fleche_gauche" />
+
+    <ImageButton
+        android:id="@+id/favAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_like_off" />
+
+    <ImageView
+        android:id="@+id/littleAlbumImage"
+        android:layout_width="132dp"
+        android:layout_height="119dp"
+        android:layout_alignBottom="@+id/defaultbackgroundalbum"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="26dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:maxWidth="140sp"
+        android:maxHeight="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/defaultalbumbackground" />
+
+    <TextView
+        android:id="@+id/NomChanteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_toStartOf="@+id/favAlbum"
+        android:layout_toEndOf="@+id/backfleche"
+        android:gravity="center_horizontal"
+        android:text="Artiste"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/defaultbackgroundalbum"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="112dp"
+        android:layout_toEndOf="@+id/littleAlbumImage"
+        android:paddingStart="10sp"
+        android:paddingTop="5sp"
+        android:text="AlbumTitle"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
